@@ -1,93 +1,62 @@
-# UTube - Video Sharing Platform
+# UTUBE_Android
 
-## Project Overview
-UTube is a full-featured video-sharing application modeled after YouTube, developed as part of an Advanced System Programming course at Bar-Ilan University. The project features:
+Welcome to the UTube Android branch, a key component of the UTube app developed as part of an Advanced System Programming course at Bar-Ilan University. This repository holds the server-side code that powers our UTube application, which simulates a simplified version of a video streaming service where users can watch, like, and comment on videos.
 
-- Dual-server architecture with a primary Node.js server for core functionality and a C++ server for intelligent content recommendations
-- Fully developed client-side applications for web (React) and Android platforms
+## Full Project Details
+For full details on the entire UTube project, including the Android app, React web app, and C++ server, please skip this README.md and refer to the wiki pages located inside the nodeJS_server branch's wiki folder or on the wiki page of the entire repository.
 
-This project is split into 4 main branches:
-1. C++ server (current branch)
-2. Node.js server 
-3. Web client-side (React)
-4. Android client-side
+## Getting Started
 
-## Wiki - Full Documentation
-**For complete details, explanations, screenshots, and usage instructions, please visit the [Wiki tab](https://github.com/Yedpel/UTube-VideoPlatform/wiki) in the toolbar at the top of this GitHub page.**
+Again - full explain is on the wiki.
 
-The wiki contains comprehensive information about all components of the UTube project, including setup guides, API documentation, and user manuals.
+These instructions will get you a copy of the project up and running on your local machine for
+development and testing purposes. Follow these simple steps to get started.
 
-This branch contains the c++ server component of the UTube project. Below, you'll find a brief overview and setup instructions specific to this component.
+### Prerequisites
+
+1. Ensure you have Android Studio installed on your computer. If not, download and install it
+   from [Android Studio's official website](https://developer.android.com/studio).
+2. Make sure you have the UTUBE-Server barnch server_task3 set up and running. If not, follow the
+   instructions in the server's README to set it up.
+
+### Setting up the Project
+
+1. **Clone the Repository**
+   Open your terminal and run the following command:
+   ```bash
+   git clone https://github.com/Yedpel/android_task_4
+   cd UTube_Android
+
+2. **Open the Project in Android Studio**
+    - Open Android Studio. On the welcome screen, select Open an Existing Project or
+      go to File > Open... if you have another project open.
+    - Navigate to the directory where you cloned the project and select it.
+
+
+3. **Run the Application**
+    - After the project opens, let Android Studio build the project. If there are any dependencies
+      to be downloaded, Android Studio will manage this automatically.
+
+    - To run the app, choose an emulator or connect an Android device to your computer.
+
+    - Click on the Run button (green triangle) in the toolbar. Android Studio will build
+      the application and install it on the selected device or emulator.
+
+**Running the Project with the rest of the other beanches - full explain on the wiki**
+
+
+**Troubleshooting**
+
+- If you encounter any issues with building or running the app,ensure your Android SDK is up-to-date
+  and that you have the correct build tools installed. Check the build.gradle file for any specific
+  SDK or library dependency that might need attention.
+- If the app cannot connect to the server, double-check that the server is running
+  and that the BASE_URL in the app's configuration is correct. Also, ensure that your firewall
+  is not blocking the connection.
+- For any server-related issues, refer to the UTUBE-Server README for troubleshooting steps.
+  **Contributing**
+  We welcome contributions to improve the UTUBE Android app. Feel free to fork the repository,
+  make your changes, and submit a pull request.
 
 ---
-
-# UTUBE C++ SERVER
-
-## OVERVIEW
-Welcome to the UTube C++ Server branch, a key component of the UTube app developed as part of an Advanced System Programming course at Bar-Ilan University. This repository holds the server-side code that powers our UTube application, which simulates a simplified version of a video streaming service where users can watch, like, and comment on videos.
-
-## FULL PROJECT DETAILS
-For full details on the entire UTube project, including the Android app, React web app, and Node.js server, please skip this README.md and refer to the wiki pages located inside the `cpp_server` branch's wiki folder or on the wiki page of the entire repository.
-
-## GETTING STARTED
-To set up and run the server locally, follow these steps:
-
-### Step 1: Install the required JSON library
-Before compiling, run this command in the terminal to install the required JSON library:
-
-```bash
-sudo apt-get install nlohmann-json3-dev
-```
-
-### Step 2: Compile and run the server
-To compile and run the C++ server, use this command in the terminal:
-
-```bash
-make && make run
-```
-
-To stop the server, use `Ctrl+C`.
-
-### Additional options:
-- `make` - Compile only
-- `make run` - Run the compiled server
-- `make clean` - Remove compiled files
-
-## IMPORTANT: PORT AVAILABILITY CHECK
-Before running the services, ensure that port `55551` is available on your system. Follow these steps to check:
-
-### Windows:
-1. Open Command Prompt (cmd).
-2. Run the following command:
-
-```bash
-netstat -ano | findstr :55551
-```
-
-If there's no output, the port is available.
-
-### Linux/macOS:
-1. Open Terminal.
-2. Run the following command:
-
-```bash
-lsof -i :55551
-```
-
-If there's no output, the port is available.
-
-If the port is in use, you may need to choose a different port or close the application using it.
-
-### Note: 
-If you change the port, remember to update it in both:
-1. The **C++ server** in `main.cpp` at the line on top:
-
-```cpp
-const int SERVER_PORT = 55551;
-```
-
-2. The **NodeJS server** in `services/cppServerService.js` at the line on top:
-
-```js
-const CPP_SERVER_PORT = 55551;
-```
+© 2024 Yedidya Peles, Shimon Rahamim, Avrham Bicha. All Rights Reserved.
