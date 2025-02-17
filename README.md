@@ -13,7 +13,7 @@ This project is split into 4 main branches:
 4. Android client-side
 
 ## Wiki - Full Documentation
-**For complete details, explanations, screenshots, and usage instructions, please visit the [Wiki tab](https://github.com/Yedpel/UTube-VideoPlatform/wiki) in the toolbar at the top of this GitHub page.**
+**For complete details, explanations, screenshots, and usage instructions, please visit the [Wiki tab](https://github.com/Avrhambi/UTube-App/wiki) in the toolbar at the top of this GitHub page.**
 
 The wiki contains comprehensive information about all components of the UTube project, including setup guides, API documentation, and user manuals.
 
