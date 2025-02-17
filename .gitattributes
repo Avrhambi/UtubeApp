@@ -1,9 +1,0 @@
-# Prioritize C++
-*.cpp linguist-detectable=true
-*.hpp linguist-detectable=true
-# Prioritize Java next
-*.java linguist-detectable=true
-# Lower priority for JavaScript
-*.js linguist-detectable=true
-# Lowest priority for HTML
-*.html linguist-detectable=true
