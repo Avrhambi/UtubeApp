@@ -1,5 +1,4 @@
 {
-  "homepage": "https://Avrhambi.github.io/Utube-App",
   "name": "utube",
   "version": "0.1.0",
   "private": true,
@@ -19,9 +18,7 @@
     "start": "node --max-old-space-size=4096 node_modules/react-scripts/scripts/start.js",
     "build": "node --max-old-space-size=4096 node_modules/react-scripts/scripts/build.js",
     "test": "node --max-old-space-size=4096 node_modules/react-scripts/scripts/test.js",
-    "eject": "node --max-old-space-size=4096 node_modules/react-scripts/scripts/eject.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "node --max-old-space-size=4096 node_modules/react-scripts/scripts/eject.js"
   },
   "eslintConfig": {
     "extends": [

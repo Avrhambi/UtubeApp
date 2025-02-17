@@ -1,6 +1,6 @@
 import './App.css';
-import Login from './login/Login';
-import SignUp from './signUp/SignUp';
+import Login from './Login/Login';
+import SignUp from './SignUp/SignUp';
 import User from './user/User';
 import { UserProvider } from './UserContext';
 import HomePage from './homepage/HomePage';
