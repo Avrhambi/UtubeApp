@@ -5,10 +5,11 @@ UTube is a full-featured video-sharing application modeled after YouTube, develo
 
 - Dual-server architecture with a primary Node.js server for core functionality and a C++ server for intelligent content recommendations
 - Fully developed client-side applications for web (React) and Android platforms
- 
-#### A light mode version of this app available on this link: https://avrhambi.github.io/UtubeApp/ 
 
-#### if You want to look on the full app
+### There two option to use the app 
+#### option 1: A frontend only version of this app available on this link: https://avrhambi.github.io/UtubeApp/ 
+
+#### option 2 : The full app combininig sever side , require cloning all the different parts according to the explanation below
 
 This project is split into 4 main branches:
 1. C++ server (current branch)
