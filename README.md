@@ -8,6 +8,8 @@ UTube is a full-featured video-sharing application modeled after YouTube, develo
  
 #### A light mode version of this app available on this link: https://avrhambi.github.io/UtubeApp/ 
 
+### if You want to look on the full app
+
 This project is split into 4 main branches:
 1. C++ server (current branch)
 2. Node.js server 
